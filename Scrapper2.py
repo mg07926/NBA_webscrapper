@@ -19,7 +19,7 @@ header = {
 r = requests.get('https://www.nba.com/teams')   # page I am requesting data from
 soup = BeautifulSoup(r.content, 'lxml') #lxml is the parser
 
-team_profile = soup.find_all('div', class_= 'flex text-sm') #finds the teams' links in the website
+team_profile = soup.find_all('div', class_= 'TeamFigure_tfLinks__i6-eh') #finds the teams' links in the website
 team_list =[] #name in line 39 will append here
 
 
